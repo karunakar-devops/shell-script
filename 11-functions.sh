@@ -9,6 +9,7 @@ then
     exit 1
 else
     echo $2 --- success
+fi
 
 }
  
