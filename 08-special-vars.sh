@@ -1,3 +1,3 @@
 #!/bin/bash
 
-All varaibles : "$@"
+echo "All varaibles:$@"
