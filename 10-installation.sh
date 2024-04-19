@@ -10,12 +10,24 @@ else
     echo "running with root user"
 fi
 
-dnf install mysql -y
+dnf install mysqll -y
 
 if [ $? -ne 0 ]
 then 
     echo "Installation of mysql --failure"
+    exit 1
     
 else
-    echo "Installation of mysql --sucess"
+    echo "Installation of mysql --success"
+fi
+
+dnf install git -y
+
+if [ $? -ne 0]
+then 
+    echo "Installation of git --failure"
+    exit 1
+    
+else
+    echo "Installation of git --success"
 fi
